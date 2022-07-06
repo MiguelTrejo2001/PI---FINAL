@@ -19,4 +19,8 @@ public class HomeController {
     public String register(){
         return "formRegister";
     }
+    @GetMapping("/cambiarcontra")
+    public String cambiarcontra(){
+        return "cambiarcontraseña";
+    }
 }
