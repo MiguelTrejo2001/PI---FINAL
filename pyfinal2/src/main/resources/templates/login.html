@@ -11,57 +11,346 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
-    <body style='background-image: url(https://contigotv.pe/wp-content/uploads/2021/04/Chaclacayo-Lima-10.jpg) ; height: 65rem; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; overflow: hidden;'>
-        
-        <div style=' margin-top: 5%; width: 500px; height: 520px; background: white; border-radius: 40px' class="container mt-100 p-5">
-            <div class="container">
-                        <div class="row">
-                            <div style='margin-top: -8%; margin-left: 25%' class="col-12">
-                               <img style='width: 45%;' src="https://media.discordapp.net/attachments/867892941254688838/993550359454830664/unknown.png" alt=""> </img>        
-                            </div>
-                            <label for="exampleFormControlInput1" style='margin-left: 10%; text-decoration: underline' class="form-label">𝗥𝗢𝗦𝗨𝗖 - 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗘 𝗦𝗨 𝗢𝗥𝗚𝗔𝗡𝗜𝗭𝗔𝗖𝗜𝗢𝗡 𝗦𝗢𝗖𝗜𝗔𝗟</label>
+    <body>
+        <div style='background-image: url(https://media.discordapp.net/attachments/868227772034715678/994800501726134382/chacla_1.png?width=742&height=472) ; height: 50rem; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; overflow: hidden'>
+
+            <div style=' margin-top: 5%; width: 500px; height: 520px; background: white; border-radius: 40px' class="container mt-100 p-5">
+                <div class="container">
+                    <div class="row">
+                        <div style='margin-top: -8%; margin-left: 25%' class="col-12">
+                            <img style='width: 45%;' src="https://media.discordapp.net/attachments/867892941254688838/993550359454830664/unknown.png" alt=""> </img>        
                         </div>
+                        <label for="exampleFormControlInput1" style='margin-left: 10%; text-decoration: underline' class="form-label">𝗥𝗢𝗦𝗨𝗖 - 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗘 𝗦𝗨 𝗢𝗥𝗚𝗔𝗡𝗜𝗭𝗔𝗖𝗜𝗢𝗡 𝗦𝗢𝗖𝗜𝗔𝗟</label>
                     </div>
-            <br>
-            <form th:action="@{/auth/main}" >
-                <div class="mb-2">
-                    <div class="container">
-                        <div class="row">
-                            <div style='margin-top: 2%' class="col-1">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </div>
-                            <div class="col-11">
-                                <input style= 'background: #CBC7C7; border-color: gray' type="text" class="form-control" id="exampleFormControlInput1" placeholder="Usuario">
-                            </div>
-                        </div>
-                    </div>  
-                   <br> 
                 </div>
-                <div class="mb-3">  
-                    <div class="container">
-                        <div class="row">
-                            <div style='margin-top: 1.5%' class="col-1">
-                                <i class="fa-solid fa-lock"></i>
+                <br>
+                <form th:action="@{/auth/main}" >
+                    <div class="mb-2">
+                        <div class="container">
+                            <div class="row">
+                                <div style='margin-top: 2%' class="col-1">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </div>
+                                <div class="col-11">
+                                    <input style= 'background: #CBC7C7; border-color: gray' type="text" class="form-control" id="exampleFormControlInput1" placeholder="Usuario">
+                                </div>
                             </div>
-                            <div class="col-11">
-                                <input style= 'background: #CBC7C7; border-color: gray' type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
-                            </div>
-                        </div>
+                        </div>  
+                        <br> 
                     </div>
-                    <br>
-                </div>
-                <div class="d-grid gap-2">                    
-                    <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión" class="btn btn-primary">
-                </div>
-            </form>
-            <div class="mb-3 w-100 text-center mt-2">
-                <a th:href="@{/cambiarcontra}" style='text-decoration: underline' class="text-info">¿Olvidaste tu contraseña?</a>
-            </div>
-            <form th:action="@{register}" >
-            <div class="d-grid gap-2">                    
-                <input  style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Crear cuenta nueva" class="btn btn-primary">
-            </div>
+                    <div class="mb-3">  
+                        <div class="container">
+                            <div class="row">
+                                <div style='margin-top: 1.5%' class="col-1">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <div class="col-11">
+                                    <input style= 'background: #CBC7C7; border-color: gray' type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="d-grid gap-2">                    
+                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión" class="btn btn-primary">
+                    </div>
                 </form>
+                <div class="mb-3 w-100 text-center mt-2">
+                    <a th:href="@{/cambiarcontra}" style='text-decoration: underline' class="text-info">¿Olvidaste tu contraseña?</a>
+                </div>
+                <form th:action="@{register}" >
+                    <div class="d-grid gap-2">                    
+                        <input  style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Crear cuenta nueva" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div style='background-image: url(https://media.discordapp.net/attachments/867892972111265833/995122465439232131/aaaaaaaaas.png) ; height: auto; background-position: center; background-size: cover; position: relative'>
+            <div style='opacity: 65% ; height: 120px; background: #24C92E; background-position: center; position: relative'></div>
+            <h1 class='position-absolute top-0 start-50 translate-middle text-white' style='text-align: center; width: 1050px; font-size: 35px; margin-top: 55px'>LISTA DE ORGANIZACIONES SOCIALES DE CHACLACAYO</h1>
+            <div class="conteiner mt-100 p-5">
+                <table class="table table-success table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#ID_OS</th>
+                            <th scope="col">NOMBRE</th>
+                            <th scope="col">TIPO</th>
+                            <th scope="col">DENOMINACIÓN</th>
+                            <th scope="col">REPRESENTANTE DE LA J.D</th>
+                            <th scope="col">CANTIDAD DE MIEMBROS</th>
+                            <th scope="col">UBICACIÓN</th>
+                            <th scope="col">INICIO_VIGENCIA</th>
+                            <th scope="col">FIN_VIGENCIA</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+        
+        <div style='background-image: url(https://media.discordapp.net/attachments/867892972111265833/995121201464750162/aaaaas.png) ; height: 40rem; background-position: center; background-repeat: no-repeat65rem; background-size: cover; position: relative; overflow: hidden'>
+            <div style='opacity: 65% ; height: 100px; background: #ffca2c; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; overflow: hidden'></div>
+            <h1 class='position-absolute top-0 start-50 translate-middle text-white' style='text-align: center; height: auto; width: 1350px; font-size: 35px; margin-top: 50px'>MODELOS DE FORMATO</h1>
+        <div style=' margin-top: 100px' class="container">
+  <div  class="row row-cols-2">
+      <div style='background: #fcf8e3' class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+        <h5 style="margin-top: 10px">SOLICITUD DE NUEVO REGISTRO DE ORGANIZACIÓN SOCIAL</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      
+      <div style='background: palegoldenrod' class="col">
+          <div class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5 style="margin-top: 10px">ACTA DE ELECCIÓN DEL ÓRGANO DIRECTIVO</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      </div>
+    
+    <div style='background: palegoldenrod' class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+    <h5 style="margin-top: 10px">ACTA DE FUNDACIÓN</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 4px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 2px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      
+      <div style='background: #fcf8e3' class="col">
+          <div class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5 style="margin-top: 10px">PLANO DE ACCIÓN DE LA ORGANIZACIÓN</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 5px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 2px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      </div>
+      
+       <div style='background: #fcf8e3' class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+        <h5 style="margin-top: 10px">PLANO REFERENCIAL DE UBICACIÓN DEL LOCAL</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      
+      <div style='background: palegoldenrod' class="col">
+          <div class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5 style="margin-top: 10px">PLANO REFERENCIAL DE RADIO DE ACCIÓN DE LA ORGANIZACIÓN</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      </div>
+
+      <div style='background: palegoldenrod' class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+        <h5 style="margin-top: 10px">NÓMINA DE MIEMBROS DE ORGANIZACIÓN SOCIAL</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      
+      <div style='background: #fcf8e3' class="col">
+          <div class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5 style="margin-top: 10px">NÓMINA DE MIEMBROS DEL ÓRGANO DIRECTIVO</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+      </div>
+      
+    <div style='background: lightgoldenrodyellow' class="col">
+       <div class="col">
+        <div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5 style="margin-top: 10px">SOLICITUD DE ACTUALIZACIÓN DE ORGANIZACIÓN SOCIAL</h5>
+    </div>
+    <div class="col-1">
+        <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+    </div>
+    <div class="col-1">
+      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+      <div class="col"></div>
+    
+  </div>
+</div>
         </div>
         <script th:src="@{/js/bootstrap.min.js}"></script>
         <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
