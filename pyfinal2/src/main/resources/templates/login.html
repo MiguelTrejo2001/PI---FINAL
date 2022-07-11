@@ -24,49 +24,21 @@
                     </div>
                 </div>
                 <br>
-                <form th:action="@{/auth/main_mp}" >
-                    <div class="mb-2">
-                        <div class="container">
-                            <div class="row">
-                                <div style='margin-top: 2%' class="col-1">
-                                    <i class="fa-solid fa-circle-user"></i>
-                                </div>
-                                <div class="col-11">
-                                    <input style= 'background: #CBC7C7; border-color: gray' type="text" class="form-control" id="exampleFormControlInput1" placeholder="Usuario">
-                                </div>
-                            </div>
-                        </div>  
-                        <br> 
-                    </div>
-                    <div class="mb-3">  
-                        <div class="container">
-                            <div class="row">
-                                <div style='margin-top: 1.5%' class="col-1">
-                                    <i class="fa-solid fa-lock"></i>
-                                </div>
-                                <div class="col-11">
-                                    <input style= 'background: #CBC7C7; border-color: gray' type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="d-grid gap-2">                    
-                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión-MP" class="btn btn-primary">
-                    </div>
-                </form>
-                <form th:action="@{/auth/main_ds}" >
+                <form method="POST" th:action="@{/login}" class=" rounded-start">
+ 
+                <div class="form-outline mb-2">
+                    <label class="form-label" for="form2Example1">Usuario</label>
+                    <input type="text" id="username" class="form-control" name="username"/>                    
+                </div>
+                <div class="form-outline mb-2">
+                    <label class="form-label" for="form2Example2">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" />                    
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto mt-4">
+                    <input type="submit" value="Login" style='background: #24C92E; border-radius: 10px' class="btn btn-success"/>
+                </div>
 
-                    <div class="d-grid gap-2">                    
-                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión-DS" class="btn btn-primary">
-                    </div>
-                </form>
-                <form th:action="@{/auth/main_pv}" >
-
-                    <div class="d-grid gap-2">                    
-                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión-PV" class="btn btn-primary">
-                    </div>
-                </form>
+            </form>
                 <div class="mb-3 w-100 text-center mt-2">
                     <a th:href="@{/cambiarcontra}" style='text-decoration: underline' class="text-info">¿Olvidaste tu contraseña?</a>
                 </div>
