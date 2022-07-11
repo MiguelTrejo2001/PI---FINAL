@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
@@ -7,12 +8,107 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
         <link th:href="@{/css/estilos.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
-        <div>Quichua :v</div>
+    <body style='background-image: url(https://media.discordapp.net/attachments/868227772034715678/994800501726134382/chacla_1.png?width=742&height=472) ; height: rem; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; overflow: hidden;'>
 
-        <div class="modal-dialog modal-dialog-centered">
-            
+        <div style=' margin-top: 50px; width: 700px; height: 620px ;background:transparent; border-radius: 35px' class="container mt-100 p-5">
+            <div class="container">
+                <div class="row">
+                    <div style='margin-top: -40px; margin-left: 5%' class="col-12">
+                        <img style='width: 90%;' src="https://cdn.discordapp.com/attachments/892877408498229260/994616186308415618/f9edce17-fb9c-4684-99aa-fcd3961454ec.jpg" alt=""> </img>        
+                    </div>
+
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-6 mb-2 d-grid"> 
+                    <div class="d-flex">
+                        
+
+                </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex">
+                        
+                </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        <
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex">
+                        
+                </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex">
+                      
+                </div>
+               
+                       
+                    <input class="form-control" type="text" style=" width:370px;margin-top: -230px;margin-left: 125px; background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999">
+                </div>
+            </div>
+           
+              
+            <div class="d-grid gap-2">                    
+                <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; height:50px; margin-left:215px; margin-top:-165px' type="submit" value="Aceptar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="btn btn-primary">
+
+               
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+                    <div class="modal-dialog modal-dialog-centered" >
+                        <div class="modal-content mb-2 " style="width: 30rem; border-radius: 1rem; " >
+                            <div class="d-flex p-3 justify-content-end mt-2">
+                                <button type="button" class="btn-close mt-2 " style="margin-right: 0.5rem" data-bs-dismiss="modal" aria-label="Close"></button> 
+                            </div>
+                            <img th:src="@{https://media.discordapp.net/attachments/867892941254688838/993550359454830664/unknown.png}" class="rounded mx-auto d-block" style="width: 8rem">
+                            <h1 style="font-size: 1.5rem;text-align: center; color: #0A9200; margin-top: 10px">Verificación</h1>
+                            <hr class="mx-auto" style="width: 25rem">
+                            <div class="mx-auto mb-5" style="width: 22rem">
+                                <h6 style="text-align: center">Se le envio un codigo Asu correo para que cambie su contraseña</h6>
+                                <a th:href="@{/}" type="submit" class="btn btn-primary mt-3" style="width:13rem;margin-left: 4.50rem;background-color: #0A9200;border-radius: 20px;border-color: #DDFF00;font-weight: 600">Aceptar</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
+        <div class="row">
+            <script th:src="@{/js/bootstrap.js}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>

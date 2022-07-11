@@ -14,7 +14,7 @@
     <body>
         <div style='background-image: url(https://media.discordapp.net/attachments/868227772034715678/994800501726134382/chacla_1.png?width=742&height=472) ; height: 50rem; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; overflow: hidden'>
 
-            <div style=' margin-top: 5%; width: 500px; height: 520px; background: white; border-radius: 40px' class="container mt-100 p-5">
+            <div style=' margin-top: 5%; width: 500px; height: 580px; background: white; border-radius: 40px' class="container mt-100 p-5">
                 <div class="container">
                     <div class="row">
                         <div style='margin-top: -8%; margin-left: 25%' class="col-12">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <br>
-                <form th:action="@{/auth/main}" >
+                <form th:action="@{/auth/main_mp}" >
                     <div class="mb-2">
                         <div class="container">
                             <div class="row">
@@ -52,7 +52,19 @@
                         <br>
                     </div>
                     <div class="d-grid gap-2">                    
-                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión" class="btn btn-primary">
+                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión-MP" class="btn btn-primary">
+                    </div>
+                </form>
+                <form th:action="@{/auth/main_ds}" >
+
+                    <div class="d-grid gap-2">                    
+                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión-DS" class="btn btn-primary">
+                    </div>
+                </form>
+                <form th:action="@{/auth/main_pv}" >
+
+                    <div class="d-grid gap-2">                    
+                        <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:115px' type="submit" value="Iniciar Sesión-PV" class="btn btn-primary">
                     </div>
                 </form>
                 <div class="mb-3 w-100 text-center mt-2">
@@ -66,7 +78,7 @@
             </div>
         </div>
 
-        <div style='background-image: url(https://media.discordapp.net/attachments/867892972111265833/995122465439232131/aaaaaaaaas.png) ; height: auto; background-position: center; background-size: cover; position: relative'>
+        <div style='background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-texturizado-pared-ladrillo_53876-63581.jpg?w=2000) ; height: auto; background-position: center; background-size: cover; position: relative'>
             <div style='opacity: 65% ; height: 120px; background: #24C92E; background-position: center; position: relative'></div>
             <h1 class='position-absolute top-0 start-50 translate-middle text-white' style='text-align: center; width: 1050px; font-size: 35px; margin-top: 55px'>LISTA DE ORGANIZACIONES SOCIALES DE CHACLACAYO</h1>
             <div class="conteiner mt-100 p-5">
@@ -204,7 +216,7 @@
         <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
     </div>
     <div class="col-1">
-      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+        <a href="http://www.ruos.munlima.gob.pe/modelos/MODELO_SOLICITUD_NUEVO_GPV.docx"><i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i></a>
     </div>
   </div>
 </div>
@@ -323,7 +335,7 @@
         <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
     </div>
     <div class="col-1">
-      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+        <a href="http://www.ruos.munlima.gob.pe/modelos/MODELO_NOMINA_JUNTA_DIRECTIVA.pdf"><i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i></a>
     </div>
   </div>
 </div>
@@ -341,7 +353,7 @@
         <i style=" margin-left: -20px; margin-top: 8px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
     </div>
     <div class="col-1">
-      <i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i>
+        <a href="http://www.ruos.munlima.gob.pe/modelos/MODELO_SOLICITUD_ACTUALIZACION_GPV.docx"><i style=" margin-left: -10px; margin-top: 6px; font-size: 30px" class="btn fa-solid fa-download"></i></a>
     </div>
   </div>
 </div>

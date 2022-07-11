@@ -8,34 +8,121 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
         <link th:href="@{/css/estilos.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
-        <div class="container">
-            <div class="mb-3">
-                <label for="formFile" class="form-label">Default file input example</label>
-                <input class="form-control" type="file" id="formFile">
+    <body style='background-image: url(https://contigotv.pe/wp-content/uploads/2021/04/Chaclacayo-Lima-10.jpg) ; height: 65rem; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; overflow: hidden;'>
+
+        <div style=' margin-top: 3%; width: 700px; height: 620px ;background: white; border-radius: 35px' class="container mt-100 p-5">
+            <div class="container">
+                <div class="row">
+                    <div style='margin-top: -8%; margin-left: 34%' class="col-12">
+                        <img style='width: 33%;' src="https://media.discordapp.net/attachments/867892941254688838/993550359454830664/unknown.png" alt=""> </img>        
+                    </div>
+                    <label for="exampleFormControlInput1" style='margin-left: 10%; text-decoration: underline' class="form-label">&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp𝗖𝗥𝗘𝗔 𝗧𝗨 𝗖𝗨𝗘𝗡𝗧𝗔&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
+            <div class="row ">
+                <div class="col-6 mb-2 d-grid"> 
+                    <div class="d-flex">
+                        <h5>D.N.I</h5> <h6 class="text-danger">*</h6></div>
+                    <input class="form-control" type="text" style="background-color: #F9F9F9; border-color: 0px; box-shadow: 0px 0px 0px #9999" >
+
+                </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        <h5>NOMBRES</h5> <h6 class="text-danger">*</h6></div>
+                    <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999" >
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-                <input class="form-control" type="file" id="formFileDisabled" disabled>
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex">
+                        <h5>APELLIDO PATERNO</h5> <h6 class="text-danger">*</h6></div>
+                    <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999" >
+                </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        <h5>APELLIDO MATERNO</h5> <h6 class="text-danger">*</h6></div>
+                    <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999" >
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="formFileSm" class="form-label">Small file input example</label>
-                <input class="form-control form-control-sm" id="formFileSm" type="file">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex">
+                        <h5>CORREO</h5> <h6 class="text-danger">*</h6></div> 
+                    <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999" >
+                </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        <h5>TELÉFONO</h5> <h6 class="text-danger">*</h6></div>
+                    <input class="form-control" type="tel" style="background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999" >
+                </div>
             </div>
-            <div>
-                <label for="formFileLg" class="form-label">Large file input example</label>
-                <input class="form-control form-control-lg" id="formFileLg" type="file">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex">
+                        <h5>FECHA NACIMIENTO </h5> <h6 class="text-danger">*</h6></div>
+                    <input class="form-control" type="date" style="background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999" >
+                </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        <h5>CONTRASEÑA</h5> <h6 class="text-danger">*</h6></div>
+                    <input class="form-control" type="text" style="background-color: #F9F9F9; border-radius: 0px; box-shadow: 0px 0px 0px #9999">
+                </div>
             </div>
-            <div class="mb-3 w-100 text-center mt-4">
-                <a th:href="@{/}" class="text-info">Ingresar al Sistema</a>
+            <div class=" mt-3 mx-auto form-check  mb-4">
+                <input class="form-check-input ms-1" type="checkbox" value="" id="invalidCheck" required>
+                <div class="d-flex">
+                    <label class="form-check-label ms-1" for="invalidCheck">
+                        HE LEÍDO Y ACEPTADO LOS TERMINOS Y CONDICIONES 
+                    </label><h6 class="text-danger ms-1">*</h6> </div>
+            </div>
+            <div class="d-grid gap-2">                    
+                <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 170px; margin-left:215px; margin-top:35px' type="submit" value="Registrarme" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="btn btn-primary">
+
+               
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+                    <div class="modal-dialog modal-dialog-centered" >
+                        <div class="modal-content mb-2 " style="width: 30rem; border-radius: 1rem; " >
+                            <div class="d-flex p-3 justify-content-end mt-2">
+                                <button type="button" class="btn-close mt-2 " style="margin-right: 0.5rem" data-bs-dismiss="modal" aria-label="Close"></button> 
+                            </div>
+                            <img th:src="@{https://media.discordapp.net/attachments/867892941254688838/993550359454830664/unknown.png}" class="rounded mx-auto d-block" style="width: 8rem">
+                            <h1 style="font-size: 1.5rem;text-align: center; color: #0A9200; margin-top: 10px">REGISTRO COMPLETADO</h1>
+                            <hr class="mx-auto" style="width: 25rem">
+                            <div class="mx-auto mb-5" style="width: 22rem">
+                                <h6 style="text-align: center">Inicia sesión para continuar con el proceso de 
+                                    registro su organización</h6>
+                                <a th:href="@{/}" type="submit" class="btn btn-primary mt-3" style="width:13rem;margin-left: 4.50rem;background-color: #0A9200;border-radius: 20px;border-color: #DDFF00;font-weight: 600">INICIAR SESIÓN</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
+        <div class="row">
+            <script th:src="@{/js/bootstrap.js}"></script>
 
-        <script th:src="@{/js/bootstrap.min.js}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>

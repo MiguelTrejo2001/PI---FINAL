@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+    <head th:replace="layout/layout :: head">
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/estilos.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body >
+
+        <div class="container-fluid" layout:fragment="page-content" >
+            <div style=' margin-left: -20px; opacity: 80% ; width: 120%; height: 80px; background: yellow; background-position: center; position: relative'></div>
+            <h1 class='position-absolute top-0 start-50 translate-middle text-success' style='text-align: center; height: auto; width: 1350px; font-size: 35px; margin-top: 40px'>SOLICITUDES PENDIENTES</h1>
+            <div class=" position-absolute opacity-50" style='margin-left: 140px; width: 78%; height: 960px; background: black; background-position: center'>
+            </div>
+            <div class="opacity-100 conteiner mt-100 p-5 position-relative">
+                <table style='margin-left: 125px;width: 80%;margin-top: 30px' class="table table-success table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID_SOLICITUD</th>
+                            <th scope="col">ID_USUARIO</th>
+                            <th scope="col">VERIFICACIÓN</th>
+                            <th scope="col">SOLICITUD</th>
+                            <th scope="col">INFORME TÉCNICO</th>
+                            <th scope="col">OPCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>3 
+
+                                <button style="height: 29px;margin-left: 10px; background: #24C92E" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><h6 style="font-size:11px" class="text-white">VER DATOS</h6>
+                                </button>
+
+                                <div style="margin-top: 200px" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="table table-success table-bordered table-striped modal-dialog">
+
+                                        <div class=" modal-content">
+
+                                            <div class="" >
+                                                <div class=" modal-header" >
+                                                    <div class="container" >
+                                                        <div class="row" style="margin-top: 10px;height: 13px">
+                                                            <div class="col" >
+                                                                <h6 class="text-dark">NOMBRES Y APELLIDOS </h6>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h6 class="text-dark"> Juanito Pèrez :v</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" modal-body" >---------------------------------------------------------------------------</div>
+                                                <div class="modal-footer">
+                                                    <div class="container">
+                                                        <div class="row" style="margin-top: -8px; height: 28px">
+                                                            <div class="col">
+                                                                <h6 class="text-dark">CORREO ELECTRÓNICO</h6>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h6 class="text-dark">Elsinpipis@gmail.com</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                </div>
+                                </div>
+                            </td>
+                            <td>SI</td>
+                            <td>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <i style="margin-left: 20px;margin-top: 7px; font-size: 25px" type="button" class="fa-solid fa-eye" data-bs-toggle="modal" data-bs-target="#vistaprevia">
+
+                                                <div class="modal fade" id="vistaprevia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header bg-success">
+                                                                <h5 class="modal-title text-white" id="exampleModalLabel">DOCUMENTOS DE LA SOLICITUD</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div  class="row row-cols-2">
+                                                                    <div style='background: #fcf8e3' class="col">
+                                                                        <div class="container">
+                                                                            <div class="row">
+                                                                                <div class="col-10">
+                                                                                     <h6 style="margin-top: 10px">SOLICITUD DE NUEVO REGISTRO
+                                                                                </div>
+                                                                                <div class="col-2">
+                                                                                    <i style=" margin-left: -15px; margin-top: -5px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                    <i style=" font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div style='background: palegoldenrod' class="col">
+                                                                        <div class="col">
+                                                                            <div class="container">
+                                                                                <div class="row">
+                                                                                    <div class="col-10">
+                                                                                        <h6 style="margin-top: 10px">ACTA DE ELECCIÓN DEL ÓRGANO DIRECTIVO</h6>
+                                                                                    </div>
+                                                                                    <div class="col-2">
+                                                                                        <i style=" margin-left: -15px; margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                        <i style=" font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div style='background: palegoldenrod' class="col">
+                                                                        <div class="container">
+                                                                            <div class="row">
+                                                                                <div class="col-10">
+                                                                                     <h6 style="margin-top: 10px">ACTA DE FUNDACIÓN</h6>
+                                                                                </div>
+                                                                                <div class="col-2">
+                                                                                    <i style=" margin-left: -15px; margin-top: -12px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                    <i style=" margin-top: -20px;font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div style='background: #fcf8e3' class="col">
+                                                                        <div class="col">
+                                                                            <div class="container">
+                                                                                <div class="row">
+                                                                                    <div class="col-10">
+                                                                                         <h6 style="margin-top: 10px">PLANO DE ACCIÓN DE LA ORGANIZACIÓN</h6>
+                                                                                    </div>
+                                                                                    <div class="col-2">
+                                                                                        <i style=" margin-left: -15px; margin-top: -12px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                        <i style=" margin-top: -20px;font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div style='background: #fcf8e3' class="col">
+                                                                        <div class="container">
+                                                                            <div class="row">
+                                                                                <div class="col-10">
+                                                                                     <h6 style="margin-top: 10px">PLANO REFERENCIAL DE UBICACIÓN DEL LOCAL</h6>
+                                                                                </div>
+                                                                                <div class="col-2">
+                                                                                    <i style=" margin-left: -15px;margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                    <i style=" font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div style='background: palegoldenrod' class="col">
+                                                                        <div class="col">
+                                                                            <div class="container">
+                                                                                <div class="row">
+                                                                                    <div class="col-10">
+                                                                                         <h6 style="margin-top: 10px">PLANO REFERENCIAL DE RADIO DE ACCIÓN DE LA ORGANIZACIÓN</h6>
+                                                                                    </div>
+                                                                                    <div class="col-2">
+                                                                                        <i style=" margin-left: -15px;margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                        <i style=" font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div style='background: palegoldenrod' class="col">
+                                                                        <div class="container">
+                                                                            <div class="row">
+                                                                                <div class="col-10">
+                                                                                     <h6 style="margin-top: 10px">NÓMINA DE MIEMBROS DE ORGANIZACIÓN SOCIAL</h6>
+                                                                                </div>
+                                                                                <div class="col-2">
+                                                                                    <i style=" margin-left: -15px; margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                    <i style=" font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div style='background: #fcf8e3' class="col">
+                                                                        <div class="col">
+                                                                            <div class="container">
+                                                                                <div class="row">
+                                                                                    <div class="col-10">
+                                                                                        <h6 style="margin-top: 10px">NÓMINA DE MIEMBROS DEL ÓRGANO DIRECTIVO</h6>
+                                                                                    </div>
+                                                                                    <div class="col-2">
+                                                                                        <i style=" margin-left: -15px; margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
+                                                                                        <i style=" font-size: 30px" Type="button" class="fa-solid fa-download"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td> NO
+                                <button style="background: #24C92E; margin-left: 20px" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <i class="fa-solid fa-file-pen"></i>
+                                </button>
+                                <button style="background: #24C92E; margin-left: 5px; font-size: 10px" class="btn btn-success">
+                                     <i style=" margin-top: 5px; font-size: 20px" type="button" class="fa-solid fa-file-arrow-up"></i>
+                                </button>
+                                
+                                <div style="margin-top: 170px" class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5>SOLICITUD ELIMINADA EXITOSAMENTE</h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div  class=" modal-dialog">
+                                        <div class=" modal-content">
+                                            <div class="modal-header bg-success">
+                                                <h5 class="modal-title text-white" id="staticBackdropLabel">VERIFICACIÓN DE SOLICITUD</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h4 class="text-success">¿Ya ha sido verificado?</h4>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Si
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Guardar Cambios</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <button style="background: #24C92E; margin-left: 10px" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                                    <i style="font-size: 22px" type="button"class="fa-solid fa-delete-left"></i>
+                                </button>
+
+                                <div style="margin-top: 150px" class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div  class=" modal-dialog">
+                                        <div class=" modal-content">
+                                            <div class="modal-header bg-success">
+                                                <h5 class="modal-title text-white" id="staticBackdropLabel">ELIMINACIÓN DE SOLICITUD</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h4 class="text-success">¿Está seguro de eliminar esta solicitud?</h4>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                                    Si, estoy seguro
+                                                </button> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>Thornton</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Thornton</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>Thornton</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>Thornton</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Thornton</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>Thornton</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button style="background: gold; margin-top: 15px; margin-left: 200px" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#requisito">
+                    <h6 class='text-dark'>Requisitos</h6>
+                </button>
+
+<div class="modal fade" id="requisito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-success">
+        <h5 class=" text-white modal-title" id="exampleModalLabel">REQUISITOS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+      </div>
+        <div class="modal-body">
+          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+      </div>
+        <div class="modal-body">
+          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+      </div>
+        <div class="modal-body">
+          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <button style="margin-top: -80px;margin-left: 920px; background: #24C92E" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#correo" data-bs-whatever="@getbootstrap">Generar correo</button>
+
+                <div class="modal fade" id="correo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class=" bg-success modal-header">
+                                <h5 class="modal-title text-white" id="exampleModalLabel">GENERAR CORREO</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">PARA:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">MENSAJE:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#awa">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 170px" class="modal fade" id="awa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5>CORREO ENVIADO EXITOSAMENTE</h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+            </div> 
+
+        </div>
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+        <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
