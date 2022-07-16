@@ -42,4 +42,5 @@ public class UsuarioService implements UserDetailsService{
         return new User(usuario.getUsername(), usuario.getPassword(), roles);
     }
     
+    
 }

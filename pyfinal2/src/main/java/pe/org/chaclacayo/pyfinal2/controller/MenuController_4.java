@@ -13,19 +13,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author admin
  */
 @Controller
-@RequestMapping("/auth/main_mp")
-public class MenuController {
+@RequestMapping("/auth/registro")
+public class MenuController_4 {
     
     @GetMapping
-    public String main_mp(){
-        return "main_mp";
+    public String registro(){
+        return "registro";
     }
-    @GetMapping("/perfil_mp")
-    public String perfil_mp(){
-        return "perfil_mp";
-    }
-    @GetMapping("/visualizar")
-    public String visualizar(){
-        return "visualizar";
+    @GetMapping("/actualizacion")
+    public String actualion(){
+        return "actualizacion";
     }
 }

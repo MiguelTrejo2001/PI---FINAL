@@ -23,7 +23,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("titulo", "Bienvenido a Thymeleaf");
-        return "/main_mp";
+        return "/main_general";
     }
     @GetMapping("/register")
     public String register(){

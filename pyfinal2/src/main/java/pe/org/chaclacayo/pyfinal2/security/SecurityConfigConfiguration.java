@@ -1,5 +1,5 @@
-
 package pe.org.chaclacayo.pyfinal2.security;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,22 +18,25 @@ public class SecurityConfigConfiguration extends WebSecurityConfigurerAdapter {
     private UserDetailsService userDetailsService;
 
     @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
+    public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-    
+
     @Autowired
-    public void configurerGlobal(AuthenticationManagerBuilder build) throws Exception{
+    public void configurerGlobal(AuthenticationManagerBuilder build) throws Exception {
         build.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
     }
-    
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/autor", "/editorial", "/libro").hasRole("USER")
-                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("ADMIN")                
+                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("ADMIN")
+                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("DS")
+                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("PV")
+                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("MP")
                 .antMatchers("/")
-                .hasAnyRole("USER", "ADMIN")
+                .hasAnyRole("USER", "ADMIN","DS","PV","MP")
                 .and()
                 .formLogin()
                 .loginPage("/login")

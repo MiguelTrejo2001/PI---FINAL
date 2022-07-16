@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+    <head th:replace="layout/layout :: head">
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div  layout:fragment="page-content">  
+            <div>
+                <h1 class='position-absolute text-success' style=' height: auto; width: 50%; font-size: 35px; margin-top: -95px; margin-left: 290px'>DOCUMENTOS DE LA SOLICITUD</h1>
+                <h6 sec:authorize="hasRole('ROLE_MP')" class='position-absolute text-success' style=' height: auto; width: 50%; margin-top: -35px; margin-left: 228px'>Marque con un <i class="fa-solid fa-check"></i> todos los documentos de la solicitud que cumplan veracidad de datos</h6>
+            
+            </div>
+            <div style=" margin-top: 140px; width: 100%">
+                <div class="row row-cols-2">
+                    <div class="col-6">
+                        <div style='background: #fcf8e3; height: 85px' class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 style="width:  100%;margin-left: 30px;margin-top: 20px">SOLICITUD DE NUEVO REGISTRO/ACTUALIZACIÓN</h5>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-check">
+                                            <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style='background: palegoldenrod; height: 85px' class="col">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 style="width: 80%;margin-left: 30px;margin-top: 20px">ACTA DE ELECCIÓN DEL ÓRGANO DIRECTIVO</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-check">
+                                                <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="col-6">
+                        <div style='margin-top: 10px;background: palegoldenrod; height: 85px' class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 style="margin-left: 30px;margin-top: 30px">ACTA DE FUNDACIÓN</h5>
+                                    </div>
+                                    <div class="col-2">
+                                        <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-check">
+                                            <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style='margin-top: 10px;background: #fcf8e3; height: 85px' class="col">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 style="margin-left: 30px;margin-top: 20px">PLANO DE ACCIÓN DE LA ORGANIZACIÓN</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-check">
+                                                <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style='margin-top: 10px;background: #fcf8e3; height: 85px' class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 style="width: 80%; margin-left: 30px;margin-top: 20px">PLANO REFERENCIAL DE UBICACIÓN DEL LOCAL</h5>
+                                    </div>
+                                    <div class="col-2">
+                                        <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-check">
+                                            <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="col-6">
+                        <div style='margin-top: 10px;background: palegoldenrod; height: 85px' class="col">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 style="width: 85%;margin-left: 30px;margin-top: 20px">PLANO DEL RADIO DE ACCIÓN DE LA ORG.</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-check">
+                                                <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div style='margin-top: 10px;background: palegoldenrod; height: 85px' class="col">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 style="margin-left: 30px;margin-top: 20px">PLANO DE ACCIÓN DE LA ORGANIZACIÓN</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-check">
+                                                <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style='margin-top: 10px;background: #fcf8e3; height: 85px' class="col">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 style="width: 80%;margin-left: 30px;margin-top: 20px">NÓMINA DE MIEMBROS DEL ÓRGANO DIRECTIVO</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <i style=" margin-top:12px; font-size: 32px" class=" btn fa-solid fa-eye"></i>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-check">
+                                                <input style="font-size: 35px; margin-top: 25px;margin-left: -25px" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2">                    
+                    <input style='background: #24C92E; border-radius: 15px; border-color: #24C92E; width: 200px; margin-left:440px; margin-top:30px' type="submit" value="Guardar cambios" data-bs-toggle="modal" data-bs-target="#exampleModalasa" data-bs-whatever="@mdo" class="btn btn-primary">
+                </div>
+
+
+                <div class="modal fade" data-bs-backdrop="static" id="exampleModalasa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" >
+                        <div style="margin-top: 200px" class="modal-content">
+                        <div style='background: #24C92E' class=" text-white modal-header">
+                            <h5 style="margin-left: 100px">VERIFICACIÓN GUARDADA</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <h6 style="margin-right: 45px">Ahora, edite la verificación de veracidad en la tabla.</h6>
+                                <h6 style="text-align: center">No olvide que, si la solicitud no cumple la veracidad, se le debe notificar por correo al usuario para luego eliminar la solicitud</h6>
+                            <form th:action="@{/auth/main_mp}">
+                                <input  style="background:#24C92E;border-radius: 20px; margin-right: 155px;width: 150px; margin-top: 10px" type="submit" value="Aceptar" class="btn btn-success"></input>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </body>
+</html>

@@ -16,19 +16,17 @@
     <body >
 
         <div class="container-fluid" layout:fragment="page-content" >
-            <div style=' margin-left: -20px; opacity: 80% ; width: 120%; height: 80px; background: yellow; background-position: center; position: relative'></div>
-            <h1 class='position-absolute top-0 start-50 translate-middle text-success' style='text-align: center; height: auto; width: 1350px; font-size: 35px; margin-top: 40px'>ORGANIZACIONES SOCIALES</h1>
-            <div class=" position-absolute opacity-50" style='margin-left: 120px; width: 82%; height: 960px; background: black; background-position: center'>
-            </div>
-            <div class="opacity-100 conteiner mt-100 p-5 position-relative">
+             <h1 class='position-absolute text-success' style='margin-left: 290px; font-size: 35px; margin-top: 20px'>ORGANIZACIONES SOCIALES</h1>
+            
+             <div class="opacity-100 conteiner mt-100 p-5 position-relative">
                 
                 <form th:action="@{/auth/main_os/agregar_os}" >
                     <div class="d-grid gap-2">                    
-                        <input style='background: #24C92E; width: 220px; margin-left:195px; margin-top: 10px' type="submit" value="Agregar" class="btn btn-success">
+                        <input style='background: #24C92E; width: 180px; margin-left:380px; margin-top: 50px' type="submit" value="Agregar" class="btn btn-success">
                     </div>
                 </form>
                 
-                <table style='margin-left: 95px;width: 87%;margin-top: 30px' class="table table-success table-bordered table-striped">
+                <table style='margin-left: -40px;width: 110%;margin-top: 30px' class="table table-success table-bordered table-striped">
                     <thead>
                         <tr>
                             <th scope="col">ID_O.S</th>
@@ -60,14 +58,14 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <form th:action="@{/auth/main_os/editar_os}">
-                                                <button style="font-size: 6px; background: #24C92E; margin-top: 1px; margin-left: -16px" class="btn btn-success">
-                                                    <i style="font-size: 18px"  class="fa-solid fa-file-pen"></i>
+                                                <button style="font-size: 6px; background: transparent; border-color: transparent; margin-top: 1px; margin-left: -28px" class="">
+                                                    <i style="font-size: 30px"  class="fa-solid fa-file-pen"></i>
                                                 </button>
                                             </form>
                                         </div>
                                         <div class="col-6">
-                                            <button style="font-size: 6px;background: #24C92E; margin-left: -10px" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                                                <i style="font-size: 20px" type="button"class="fa-solid fa-delete-left"></i>
+                                            <button style="font-size: 6px;background: transparent; border-color: transparent; margin-left: -15px; margin-top: -1px" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                                                <i style="font-size: 33px" type="button"class="fa-solid fa-delete-left"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -84,25 +82,12 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                                                    Si, estoy seguro
-                                                </button> 
+                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Si, estoy seguro</button> 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div style="margin-top: 170px" class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5>ORGANIZACIÓN SOCIAL ELIMINADA EXITOSAMENTE</h5>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </td>
                         </tr>
                         <tr>
@@ -195,12 +180,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <form th:action="@{/auth/main_ds}" >
-                    <div class="d-grid gap-2">                    
-                        <input style='background: #24C92E; width: 280px; margin-left:195px; margin-top: 10px' type="submit" value="Volver a solicitudes pendientes" class="btn btn-success">
-                    </div>
-                </form>
-              
+
             </div> 
 
         </div>

@@ -9,37 +9,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="container-fluid" layout:fragment="page-content">  
-            <div style=' margin-left: -20px; opacity: 80% ; width: 120%; height: 80px; background: yellow; background-position: center; position: relative'></div>
-            <h1 class='position-absolute top-0 start-50 translate-middle text-success' style='text-align: center; height: auto; width: 1350px; font-size: 35px; margin-top: 40px'>AGREGAR ORGANIZACIÓN SOCIAL</h1>
-            <div class=" position-absolute opacity-50" style='margin-left: 140px; width: 78%; height: 960px; background: black; background-position: center'>
-            </div>
-            <div style="width: 40%; margin-left: 400px" class=" position-relative mb-3">
-                <label style="margin-top: 20px" for="formFile" class="text-white form-label">NOMBRE</label>
+        <div  layout:fragment="page-content">  
+            
+       <h1 class='position-absolute text-success' style=' height: auto; width: 50%; font-size: 35px; margin-top: -65px; margin-left: 280px'>AGREGAR ORGANIZACIÓN SOCIAL</h1>
+
+            <div style="width: 60%; margin-left: 240px; margin-top: 100px" class=" conteiner position-relative mb-3">
+  <div class="row row-cols-2">
+    <div class="col-6">
+    <label style="margin-top: 20px" for="formFile" class="text-dark form-label">NOMBRE</label>
                 <input class="form-control" type="text" id="formFile">
-                <label style="margin-top: 20px" for="formFile" class="text-white form-label">TIPO</label>
+    </div>
+    <div class="col-6">
+    <label style="margin-top: 20px" for="formFile" class="text-dark form-label">TIPO</label>
                 <input class="form-control" type="text" id="formFile">
-                <label for="formFile" style="margin-top: 20px" class="text-white form-label">DENOMINACIÓN</label>
+    </div>
+    <div class="col-6">
+    <label for="formFile" style="margin-top: 20px" class="text-dark form-label">DENOMINACIÓN</label>
                 <input class="form-control" type="text" id="formFile">
-                <label for="formFile" style="margin-top: 20px" class="text-white form-label">REPRESENTANTE</label>
+    </div>
+    <div class="col-6">
+    <label for="formFile" style="margin-top: 20px" class="text-dark form-label">REPRESENTANTE</label>
                 <input class="form-control" type="text" id="formFile">
-                <label for="formFile" style="margin-top: 20px" class="text-white form-label">UBICACIÓN</label>
+    </div>
+    <div class="col-6">
+    <label for="formFile" style="margin-top: 20px" class="text-dark form-label">UBICACIÓN</label>
                 <input class="form-control" type="text" id="formFile">
-                <button style="margin-top: 20px" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#awa">Agregar</button>
+    </div>
+      <div class="col-6">
+          <label for="formFile" style="margin-top: 20px" class="text-dark form-label">CANTIDAD DE MIEMBROS</label>
+          <input class="form-control" type="number" id="formFile">
+      </div>
+    <div class="col-6">
+    <label for="formFile" style="margin-top: 20px" class="text-dark form-label">INICIO DE VIGENCIA</label>
+                <input class="form-control" type="date" id="formFile">
+    </div>
+    <div class="col-6">
+    <label for="formFile" style="margin-top: 20px" class="text-dark form-label">FIN DE VIGENCIA</label>
+                <input class="form-control" type="date" id="formFile">
+    </div>
+  </div>
+</div>
+            <div style="width: 40%; margin-left: 470px" class=" position-relative mb-3">
+                
+                <button style=" margin-top: 25px; width:150px; margin-left: 20px" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#awa">Agregar</button>
             </div>
             <div style="margin-top: 170px" class="modal fade" id="awa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5>NUEVA ORGANIZACIÓN AGREGADA EXITOSAMENTE</h5>
-                            </div>
-                            <div class="modal-footer">
-                                <form th:action="@{/auth/main_os}">
-                                <input type="submit" value="Aceptar" class="btn btn-success"></input>
-                                </form>
-                            </div>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class=" bg-success text-white modal-header">
+                            <h5 style="text-align: center">NUEVA ORGANIZACIÓN AGREGADA EXITOSAMENTE</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <form th:action="@{/auth/main_os}">
+                                <input  style="margin-right: 155px;width: 150px" type="submit" value="Aceptar" class="btn btn-success"></input>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </body>
 </html>

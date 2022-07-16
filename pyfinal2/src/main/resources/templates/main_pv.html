@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/layout}">
@@ -10,18 +8,13 @@
         <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
         <link th:href="@{/css/estilos.css}" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     </head>
 
-    <body >
-
-        <div class="container-fluid" layout:fragment="page-content" >
-            <div style=' margin-left: -20px; opacity: 80% ; width: 120%; height: 80px; background: yellow; background-position: center; position: relative'></div>
-            <h1 class='position-absolute top-0 start-50 translate-middle text-success' style='text-align: center; height: auto; width: 1350px; font-size: 35px; margin-top: 40px'>SOLICITUDES PENDIENTES</h1>
-            <div class=" position-absolute opacity-50" style='margin-left: 140px; width: 78%; height: 960px; background: black; background-position: center'>
-            </div>
+    <body>
+        <div layout:fragment="page-content" >
+            <h1 class='position-absolute text-success' style='margin-left: 330px; font-size: 35px; margin-top: 20px'>SOLICITUDES PENDIENTES</h1>
             <div class="opacity-100 conteiner mt-100 p-5 position-relative">
-                <table style='margin-left: 125px;width: 80%;margin-top: 30px' class="table table-success table-bordered table-striped">
+                <table style='width: 100%;margin-top: 50px' class="table table-success table-bordered table-striped">
                     <thead>
                         <tr>
                             <th scope="col">ID_SOLICITUD</th>
@@ -97,7 +90,7 @@
                                                                         <div class="container">
                                                                             <div class="row">
                                                                                 <div class="col-10">
-                                                                                     <h6 style="margin-top: 10px">SOLICITUD DE NUEVO REGISTRO
+                                                                                    <h6 style="margin-top: 10px">SOLICITUD DE NUEVO REGISTRO
                                                                                 </div>
                                                                                 <div class="col-2">
                                                                                     <i style=" margin-left: -15px; margin-top: -5px; font-size: 30px" class=" btn fa-solid fa-eye"></i>
@@ -127,7 +120,7 @@
                                                                         <div class="container">
                                                                             <div class="row">
                                                                                 <div class="col-10">
-                                                                                     <h6 style="margin-top: 10px">ACTA DE FUNDACIÓN</h6>
+                                                                                    <h6 style="margin-top: 10px">ACTA DE FUNDACIÓN</h6>
                                                                                 </div>
                                                                                 <div class="col-2">
                                                                                     <i style=" margin-left: -15px; margin-top: -12px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
@@ -142,7 +135,7 @@
                                                                             <div class="container">
                                                                                 <div class="row">
                                                                                     <div class="col-10">
-                                                                                         <h6 style="margin-top: 10px">PLANO DE ACCIÓN DE LA ORGANIZACIÓN</h6>
+                                                                                        <h6 style="margin-top: 10px">PLANO DE ACCIÓN DE LA ORGANIZACIÓN</h6>
                                                                                     </div>
                                                                                     <div class="col-2">
                                                                                         <i style=" margin-left: -15px; margin-top: -12px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
@@ -157,7 +150,7 @@
                                                                         <div class="container">
                                                                             <div class="row">
                                                                                 <div class="col-10">
-                                                                                     <h6 style="margin-top: 10px">PLANO REFERENCIAL DE UBICACIÓN DEL LOCAL</h6>
+                                                                                    <h6 style="margin-top: 10px">PLANO REFERENCIAL DE UBICACIÓN DEL LOCAL</h6>
                                                                                 </div>
                                                                                 <div class="col-2">
                                                                                     <i style=" margin-left: -15px;margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
@@ -172,7 +165,7 @@
                                                                             <div class="container">
                                                                                 <div class="row">
                                                                                     <div class="col-10">
-                                                                                         <h6 style="margin-top: 10px">PLANO REFERENCIAL DE RADIO DE ACCIÓN DE LA ORGANIZACIÓN</h6>
+                                                                                        <h6 style="margin-top: 10px">PLANO REFERENCIAL DE RADIO DE ACCIÓN DE LA ORGANIZACIÓN</h6>
                                                                                     </div>
                                                                                     <div class="col-2">
                                                                                         <i style=" margin-left: -15px;margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
@@ -187,7 +180,7 @@
                                                                         <div class="container">
                                                                             <div class="row">
                                                                                 <div class="col-10">
-                                                                                     <h6 style="margin-top: 10px">NÓMINA DE MIEMBROS DE ORGANIZACIÓN SOCIAL</h6>
+                                                                                    <h6 style="margin-top: 10px">NÓMINA DE MIEMBROS DE ORGANIZACIÓN SOCIAL</h6>
                                                                                 </div>
                                                                                 <div class="col-2">
                                                                                     <i style=" margin-left: -15px; margin-top: -5px;  font-size: 30px" class=" btn fa-solid fa-eye"></i>
@@ -229,22 +222,8 @@
                                     <i class="fa-solid fa-file-pen"></i>
                                 </button>
                                 <button style="background: #24C92E; margin-left: 5px; font-size: 10px" class="btn btn-success">
-                                     <i style=" margin-top: 5px; font-size: 20px" type="button" class="fa-solid fa-file-arrow-up"></i>
+                                    <i style=" margin-top: 5px; font-size: 20px" type="button" class="fa-solid fa-file-arrow-up"></i>
                                 </button>
-                                
-                                <div style="margin-top: 170px" class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5>SOLICITUD ELIMINADA EXITOSAMENTE</h5>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div  class=" modal-dialog">
                                         <div class=" modal-content">
@@ -276,10 +255,7 @@
                             </td>
 
                             <td>
-                                <button style="background: #24C92E; margin-left: 10px" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                                    <i style="font-size: 22px" type="button"class="fa-solid fa-delete-left"></i>
-                                </button>
-
+                                    <i data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style="font-size: 40px; margin-left: 20px" type="button"class="fa-solid fa-delete-left"></i>
                                 <div style="margin-top: 150px" class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div  class=" modal-dialog">
                                         <div class=" modal-content">
@@ -292,9 +268,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                                                    Si, estoy seguro
-                                                </button> 
+                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Si, estoy seguro</button> 
                                             </div>
                                         </div>
                                     </div>
@@ -367,39 +341,39 @@
                         </tr>
                     </tbody>
                 </table>
-                <button style="background: gold; margin-top: 15px; margin-left: 200px" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#requisito">
-                    <h6 class='text-dark'>Requisitos</h6>
+                <button style="width:180px; background: gold; margin-top: 25px; margin-left: 300px" type="button" class="btn btn-warning d-flex" data-bs-toggle="modal" data-bs-target="#requisito">
+                    <h4 class='text-dark'>Requisitos</h4><i style="font-size: 30px; margin-left: 10px" class="fa-solid fa-file"></i>
                 </button>
 
-<div class="modal fade" id="requisito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header bg-success">
-        <h5 class=" text-white modal-title" id="exampleModalLabel">REQUISITOS</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
-      </div>
-        <div class="modal-body">
-          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
-      </div>
-        <div class="modal-body">
-          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
-      </div>
-        <div class="modal-body">
-          -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="modal fade" id="requisito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <h5 class=" text-white modal-title" id="exampleModalLabel">REQUISITOS</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+                            </div>
+                            <div class="modal-body">
+                                -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+                            </div>
+                            <div class="modal-body">
+                                -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+                            </div>
+                            <div class="modal-body">
+                                -XXXXX XX XXXXXXXXX XXXX  XXXXX XXXX
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <button style="margin-top: -80px;margin-left: 920px; background: #24C92E" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#correo" data-bs-whatever="@getbootstrap">Generar correo</button>
+                <button style=" width:100px;margin-left: 550px; margin-top: -53px; background: #24C92E" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#correo" data-bs-whatever="@getbootstrap"><i style="font-size: 40px" class="fa-solid fa-envelope"></i></button>
 
-                <div class="modal fade" id="correo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div style="margin-top: 40px; margin-left: 30px" class="modal fade" id="correo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class=" bg-success modal-header">
@@ -420,29 +394,28 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#awa">Enviar</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Enviar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div style="margin-top: 170px" class="modal fade" id="awa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5>CORREO ENVIADO EXITOSAMENTE</h5>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>CORREO ENVIADO EXITOSAMENTE</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div> 
-
         </div>
-        <script th:src="@{/js/bootstrap.min.js}"></script>
-        <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
 
-    </body>
+</body>
 </html>
