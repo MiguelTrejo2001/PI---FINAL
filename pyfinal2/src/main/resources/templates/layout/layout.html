@@ -23,7 +23,7 @@
                         <ul class="nav nav-pills flex-column mb-auto">
                             
                             <a class="text-success nav-link text-white" th:href="@{/auth/main_ds}"  sec:authorize="hasRole('ROLE_DS')">Solicitudes pendientes DS</a>
-                            <a class="text-success nav-link text-white" th:href="@{/auth/main_os}"  sec:authorize="hasRole('ROLE_DS')">Organizaciones Sociales DS</a>
+                            <a class="text-success nav-link text-white" th:href="@{/auth/all}"  sec:authorize="hasRole('ROLE_DS')">Organizaciones Sociales DS</a>
                             <a class="text-success nav-link text-white" th:href="@{/auth/main_mp}"  sec:authorize="hasRole('ROLE_MP')">Solicitudes pendientes MP</a>
                             <a class="text-success nav-link text-white" th:href="@{/auth/main_pv}"  sec:authorize="hasRole('ROLE_PV')">Solicitudes pendientes PV</a>
                            <a class="text-success nav-link text-white" th:href="@{/auth/registro}"  sec:authorize="hasRole('USER')">Registrar O.S USER</a>

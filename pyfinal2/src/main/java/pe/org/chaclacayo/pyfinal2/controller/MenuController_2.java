@@ -4,22 +4,31 @@
  */
 package pe.org.chaclacayo.pyfinal2.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pe.org.chaclacayo.pyfinal2.servicios.OsService;
 
 /**
  *
  * @author admin
  */
 @Controller
-@RequestMapping("/auth/main_os")
+@RequestMapping("/auth")
 public class MenuController_2 {
     
-    @GetMapping
-    public String main_os(){
-        return "main_os";
+    @Autowired
+    private OsService osService;
+    
+    @GetMapping("/all")
+    public String listarOs(Model model){
+        //String keyword = "Yogurt";
+        model.addAttribute("os", osService.readAll());
+        return "/main_os";
     }
+    
     @GetMapping("/perfil_os")
     public String perfil_os(){
         return "perfil_os";

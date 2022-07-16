@@ -42,17 +42,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr th:each="ors :${os}">
                             <th scope="row">1</th>
-                            <td>Chaclacayo a la historia</td>
-
-                            <td>Temática</td>
-                            <td>Cultural</td>
-                            <td>Larry Carmesí Pérez Ortoñez</td>
-                            <td> Avenida Grau-Mz B Lt 40</td>
-                             <td>220</td>
-                              <td>20/10/2018</td>
-                               <td>20/10/2023</td>
+                        <td th:text="${ors.idos}"></td>
+                        <td th:text="${ors.nombre}"></td>
+                        <td th:text="${ors.tipo}"></td>
+                        <td th:text="${ors.denominacion}"></td>
+                        <td th:text="${ors.representante_jd}"></td>
+                        <td th:text="${ors.ubicacion}"></td>
+                        <td th:text="${ors.c_miembros}"></td>
+                        <td th:text="${ors.inicio_vigencia}"></td>
+                        <td th:text="${ors.fin_vigencia}"></td>
                             <td>
                                 <div class="container">
                                     <div class="row">
@@ -89,94 +89,6 @@
                                 </div>
                                 
                             </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Otto</td>
-                            <td>Thornton</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>Thornton</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@twitter</td>
-                            <td>Thornton</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Otto</td>
-                            <td>Thornton</td>
-                            <td>Otto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@twitter</td>
                         </tr>
                     </tbody>
                 </table>
