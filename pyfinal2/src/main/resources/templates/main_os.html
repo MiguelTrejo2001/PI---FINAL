@@ -16,18 +16,18 @@
     <body >
 
         <div class="container-fluid" layout:fragment="page-content" >
-             <h1 class='position-absolute text-success' style='margin-left: 290px; font-size: 35px; margin-top: 20px'>ORGANIZACIONES SOCIALES</h1>
-            
-             <div class="opacity-100 conteiner mt-100 p-5 position-relative">
-                
-                <form th:action="@{/auth/main_os/agregar_os}" >
+            <h1 class='position-absolute text-success' style='margin-left: 290px; font-size: 35px; margin-top: 20px'>ORGANIZACIONES SOCIALES</h1>
+
+            <div class="opacity-100 conteiner mt-100 p-5 position-relative">
+
+                <form th:action="@{/auth/form}" >
                     <div class="d-grid gap-2">                    
                         <input style='background: #24C92E; width: 180px; margin-left:380px; margin-top: 50px' type="submit" value="Agregar" class="btn btn-success">
                     </div>
                 </form>
-                
-                <table style='margin-left: -40px;width: 110%;margin-top: 30px' class="table table-success table-bordered table-striped">
-                    <thead>
+
+                <table style='margin-left: -70px;width: 115%;margin-top: 30px' class="table table-bordered table-striped">
+                    <thead class="bg-success text-white">
                         <tr>
                             <th scope="col">ID_O.S</th>
                             <th scope="col" style="width: 130px">NOMBRE</th>
@@ -43,51 +43,32 @@
                     </thead>
                     <tbody>
                         <tr th:each="ors :${os}">
-                            <th scope="row">1</th>
-                        <td th:text="${ors.idos}"></td>
-                        <td th:text="${ors.nombre}"></td>
-                        <td th:text="${ors.tipo}"></td>
-                        <td th:text="${ors.denominacion}"></td>
-                        <td th:text="${ors.representante_jd}"></td>
-                        <td th:text="${ors.ubicacion}"></td>
-                        <td th:text="${ors.c_miembros}"></td>
-                        <td th:text="${ors.inicio_vigencia}"></td>
-                        <td th:text="${ors.fin_vigencia}"></td>
+                            <td th:text="${ors.idos}"></td>
+                            <td th:text="${ors.nombre}"></td>
+                            <td th:text="${ors.tipo}"></td>
+                            <td th:text="${ors.denominacion}"></td>
+                            <td th:text="${ors.representante_jd}"></td>
+                            <td th:text="${ors.ubicacion}"></td>
+                            <td th:text="${ors.c_miembros}"></td>
+                            <td th:text="${ors.inicio_vigencia}"></td>
+                            <td th:text="${ors.fin_vigencia}"></td>
                             <td>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <form th:action="@{/auth/main_os/editar_os}">
-                                                <button style="font-size: 6px; background: transparent; border-color: transparent; margin-top: 1px; margin-left: -28px" class="">
-                                                    <i style="font-size: 30px"  class="fa-solid fa-file-pen"></i>
-                                                </button>
+                               <div class="container">
+                                  <div class="row">
+                                        <div class="col-6">                                  
+                                                <a th:href="@{/auth/edit/}+${ors.idos}"><i style="font-size: 24px; margin-top: 7px"  class="fa-solid fa-file-pen"></i></a>
+                                        </div>
+                                      <div class="col-6">
+                                        <form th:action="@{/auth/del/}+${ors.idos}">
+                                            <button style="font-size: 6px;background: transparent; border-color: transparent; margin-left: -13px; margin-top: 4px" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                                                <i style="font-size: 24px" type="button"class="fa-solid fa-delete-left"></i>
+                                            </button>
                                             </form>
                                         </div>
-                                        <div class="col-6">
-                                            <button style="font-size: 6px;background: transparent; border-color: transparent; margin-left: -15px; margin-top: -1px" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                                                <i style="font-size: 33px" type="button"class="fa-solid fa-delete-left"></i>
-                                            </button>
-                                        </div>
-                                    </div>
+                                            
                                 </div>
-                                <div style="margin-top: 150px" class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div  class=" modal-dialog">
-                                        <div class=" modal-content">
-                                            <div class="modal-header bg-success">
-                                                <h5 class="modal-title text-white" id="staticBackdropLabel">ELIMINACIÓN DE ORGANIZACIÓN SOCIAL</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h4 class="text-success">¿Está seguro de eliminar esta organiación social?</h4>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Si, estoy seguro</button> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+                          </div>
+
                             </td>
                         </tr>
                     </tbody>

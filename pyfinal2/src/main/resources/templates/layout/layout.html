@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="container-fluid" style='margin-left: -12px'>
-            <div class="row" style="height: 39rem">
+            <div class="row" style="height: 38.92rem">
                 <div class="col-2" >
                     <div class="d-flex flex-column flex-shrink-0 p-2 text-white" style="width: 100%; height: 100.3%; background: limegreen">
                         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"></a>
@@ -33,7 +33,7 @@
                             <a class="text-success nav-link text-white" th:href="@{/auth/main_mp}"  sec:authorize="hasRole('ADMIN')">Solicitudes pendientes MP</a>
                            <a class="text-success nav-link text-white" th:href="@{/auth/registro}"  sec:authorize="hasRole('ADMIN')">Registrar O.S USER</a>
                           <a class="text-success nav-link text-white" th:href="@{/auth/registro/actualizacion}"  sec:authorize="hasRole('ADMIN')">Actualizar O.S USER</a>
-                            <a class="text-success nav-link text-white" th:href="@{/auth/main_os}"  sec:authorize="hasRole('ADMIN')">Organizaciones Sociales DS</a>
+                            <a class="text-success nav-link text-white" th:href="@{/auth/all}"  sec:authorize="hasRole('ADMIN')">Organizaciones Sociales DS</a>
                             
 
                         </ul>

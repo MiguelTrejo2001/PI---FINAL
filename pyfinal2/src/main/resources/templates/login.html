@@ -54,119 +54,31 @@
             <div style='opacity: 65% ; height: 120px; background: #24C92E; background-position: center; position: relative'></div>
             <h1 class='position-absolute top-0 start-50 translate-middle text-white' style='text-align: center; width: 1050px; font-size: 35px; margin-top: 55px'>LISTA DE ORGANIZACIONES SOCIALES DE CHACLACAYO</h1>
             <div class="conteiner mt-100 p-5">
-                <table class="table table-success table-bordered table-striped">
-                    <thead>
+                <table style='margin-left: 60px;width: 90%;margin-top: 30px;background-color: white' class="table table-bordered table-striped">
+                    <thead class="bg-success text-white">
                         <tr>
-                            <th scope="col">#ID_OS</th>
-                            <th scope="col">NOMBRE</th>
+                            <th scope="col">ID_O.S</th>
+                            <th scope="col" style="width: 130px">NOMBRE</th>
                             <th scope="col">TIPO</th>
                             <th scope="col">DENOMINACIÓN</th>
-                            <th scope="col">REPRESENTANTE DE LA J.D</th>
-                            <th scope="col">CANTIDAD DE MIEMBROS</th>
+                            <th scope="col">REPRESENTANTE</th>
                             <th scope="col">UBICACIÓN</th>
-                            <th scope="col">INICIO_VIGENCIA</th>
-                            <th scope="col">FIN_VIGENCIA</th> 
+                            <th scope="col">CANT. DE MIEMBROS</th>
+                            <th scope="col">INICIO DE VIGENCIA</th>
+                            <th scope="col">FIN DE VIGENCIA</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
+                        <tr th:each="ors :${os}">
+                            <td th:text="${ors.idos}"></td>
+                            <td th:text="${ors.nombre}"></td>
+                            <td th:text="${ors.tipo}"></td>
+                            <td th:text="${ors.denominacion}"></td>
+                            <td th:text="${ors.representante_jd}"></td>
+                            <td th:text="${ors.ubicacion}"></td>
+                            <td th:text="${ors.c_miembros}"></td>
+                            <td th:text="${ors.inicio_vigencia}"></td>
+                            <td th:text="${ors.fin_vigencia}"></td>
                         </tr>
                     </tbody>
                 </table>

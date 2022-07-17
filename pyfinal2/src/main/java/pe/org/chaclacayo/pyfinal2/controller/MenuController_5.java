@@ -4,19 +4,20 @@
  */
 package pe.org.chaclacayo.pyfinal2.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pe.org.chaclacayo.pyfinal2.servicios.OsService;
 
 /**
  *
  * @author admin
  */
 @Controller
-@RequestMapping("/auth/main/productos")
-public class ProductoController {
-    @GetMapping
-    public String main(){
-        return "productos/productos";
-    }
+public class MenuController_5 {
+    
 }
+
+     

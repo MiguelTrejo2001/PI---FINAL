@@ -1,6 +1,7 @@
 package pe.org.chaclacayo.pyfinal2.entity;
 
-import java.util.List;
+
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,14 +20,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "os")
-public class Os {
-    
+public class Os implements Serializable {
+
+
+
+
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="idos")
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    
-    private int id;
-    @Column(unique=true)
     private int idos;
+    @Column(unique=true)
     private String nombre;
     private String tipo;
     private String denominacion;
